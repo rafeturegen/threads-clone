@@ -3,7 +3,14 @@ import React from 'react'
 
 export default function page() {
 
-    const userData = {}
+    const userData = {
+        id: "String",
+        objectId: "String",
+        username:" String",
+        name: "String",
+        bio: "String",
+        image: "String",
+    }
 
   return (
     <main className='mx-auto flex max-w-3xl flex-col items-center '>

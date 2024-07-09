@@ -12,12 +12,6 @@ export default function LeftSideBar() {
 
   const pathname = usePathname();
   const router = useRouter();
-  const { signOut } = useClerk() 
-
-  async function handleSignOut(){
-    await signOut();
-    router.push("/sign-in");
-  }
 
   return (
     <section className='custom-scrollbar leftsidebar'>
@@ -51,7 +45,7 @@ export default function LeftSideBar() {
           <div className='mt-[5.50rem] px-4'>
             <SignedIn>
               <SignOutButton>
-                <div className='flex cursor-pointer gap-4' onClick={handleSignOut}>
+                <div className='flex cursor-pointer gap-4'>
                   <Image
                   src="/logout.svg"
                   alt='logout'
